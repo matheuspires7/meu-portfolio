@@ -1,0 +1,364 @@
+<%- include('partials/header') %>
+
+<section class="hero section-dark" id="inicio">
+  <img
+    src="/img/profile.jpg"
+    alt="Foto de perfil de Matheus Pires"
+    class="profile-pic"
+  />
+
+  <h1>Matheus Pires</h1>
+  <p><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+
+  <div class="social-icons">
+    <a
+      href="https://github.com/matheuspires7"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="GitHub"
+    >
+      <i class="fab fa-github"></i>
+    </a>
+    <a
+      href="https://www.linkedin.com/in/seu-usuario"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn"
+    >
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a
+      href="https://discord.com/users/328262568919564288"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Discord"
+    >
+      <i class="fab fa-discord"></i>
+    </a>
+    <a
+      href="https://www.instagram.com/math.pires7/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram"
+    >
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+</section>
+
+<section id="sobre" class="section-sobre py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div
+        class="col-md-6 mb-4 mb-md-0"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        <p class="lead text-secondary mb-2">
+          Transformando curiosidade em soluções com tecnologia.
+        </p>
+        <h2 class="mb-3 display-5 fw-bold">Sobre Mim</h2>
+        <p>
+          Sou <strong class="text-primary">Matheus Pires</strong>, estudante de
+          Análise e Desenvolvimento de Sistemas na FATEC-SJC. Sempre fui
+          apaixonado por tecnologia e acredito que o aprendizado prático é a
+          melhor forma de evoluir.
+        </p>
+        <p>
+          Desde o início da graduação, venho me dedicando a projetos que unem
+          teoria e prática, buscando resolver problemas reais e experimentar
+          novas ferramentas. Tenho interesse especial em
+          <i class="fas fa-terminal me-1 text-primary"></i> desenvolvimento web
+          e backend, além de gostar de trabalhar com
+          <i class="fas fa-database me-1 text-primary"></i> dados e automações.
+        </p>
+        <p>
+          A cada novo desafio, busco não apenas entregar soluções funcionais,
+          mas também entender a fundo o porquê das coisas, o que me leva
+          constantemente a estudar design de software, boas práticas e
+          arquitetura de sistemas.
+        </p>
+        <p>
+          Fora do código, sou movido por desafios, gosto de entender como as
+          coisas funcionam e acredito que a tecnologia deve ser simples e
+          acessível. No tempo livre, gosto de explorar novas ferramentas, ouvir
+          música e aprender algo novo que possa me inspirar em futuros projetos.
+        </p>
+        <p class="fst-italic text-muted">
+          Provavelmente me encontra ouvindo música, testando ferramentas ou
+          automatizando o preparo do meu café ☕.
+        </p>
+      </div>
+      <div
+        class="col-md-6 text-center"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
+        <img src="/img/about.png" alt="About" class="about-pic" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section
+  id="projetos"
+  class="min-vh-100 bg-black text-light py-5 d-flex align-items-center"
+>
+  <div class="container">
+    <h2 class="text-center mb-5 section-title">
+      <i class="bi bi-folder-fill me-2"></i>Projetos
+    </h2>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <!-- Projeto 1 -->
+      <div class="col">
+        <div
+          class="card projeto-card bg-dark text-light border-0 rounded-4 p-3 h-100"
+        >
+          <div class="card-body">
+            <h5 class="card-title mb-3">
+              <i class="bi bi-laptop-code me-2"></i>DocEye
+            </h5>
+            <p class="card-text">
+              Software para automatização de extração de informações.
+            </p>
+            <div class="mb-2">
+              <span class="badge bg-primary me-1">Java</span>
+              <span class="badge bg-warning text-dark me-1">Tesseract OCR</span>
+              <span class="badge bg-secondary">Ollama</span>
+            </div>
+            <p>
+              <strong>Desafios:</strong> Integração de VLM com Java Desktop,
+              tratamento de diferentes layouts de documentos, extração precisa
+              de informações em cenários reais e armazenamento eficiente no
+              banco de dados.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a
+              href="https://github.com/matheuspires7/DocEye"
+              target="_blank"
+              class="btn btn-outline-light btn-sm rounded-pill px-3 transition"
+            >
+              <i class="bi bi-github me-1"></i>GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 2 -->
+      <div class="col">
+        <div
+          class="card projeto-card bg-dark text-light border-0 rounded-4 p-3 h-100"
+        >
+          <div class="card-body">
+            <h5 class="card-title mb-3">
+              <i class="bi bi-laptop-code me-2"></i>Scrum Teach
+            </h5>
+            <p class="card-text">
+              Plataforma educacional interativa voltada para o ensino de
+              metodologias ágeis com foco em Scrum.
+            </p>
+            <div class="mb-2">
+              <span class="badge bg-light text-dark me-1">HTML</span>
+              <span class="badge bg-info text-dark me-1">CSS</span>
+              <span class="badge bg-purple text-white">Bootstrap</span>
+            </div>
+            <p>
+              <strong>Desafios:</strong> Transformar conceitos teóricos do Scrum
+              em conteúdo interativo, garantir acessibilidade e usabilidade da
+              plataforma para diferentes perfis de usuários, além de criar
+              avaliações eficazes para medir o aprendizado.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a
+              href="https://github.com/matheuspires7/scrum-teach"
+              target="_blank"
+              class="btn btn-outline-light btn-sm rounded-pill px-3 transition"
+            >
+              <i class="bi bi-github me-1"></i>GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 3 -->
+      <div class="col">
+        <div
+          class="card projeto-card bg-dark text-light border-0 rounded-4 p-3 h-100"
+        >
+          <div class="card-body">
+            <h5 class="card-title mb-3">
+              <i class="bi bi-laptop-code me-2"></i>Calculador de IMC
+            </h5>
+            <p class="card-text">
+              Projeto de Sistema de Gestão de Alunos e Cálculo de IMC.
+            </p>
+            <div class="mb-2">
+              <span class="badge bg-primary me-1">Java</span>
+              <span class="badge bg-success">MySQL</span>
+            </div>
+            <p>
+              <strong>Desafios:</strong> Implementar a lógica de cálculo do IMC
+              com precisão, garantir a integridade dos dados nas operações de
+              CRUD com MySQL, organizar o sistema de gravação dos arquivos de
+              texto individualizados para cada aluno, além de criar uma
+              interface clara e eficiente para facilitar o uso do sistema pelos
+              usuários.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a
+              href="https://github.com/matheuspires7/Calculador-de-IMC"
+              class="btn btn-outline-light btn-sm rounded-pill px-3 transition"
+            >
+              <i class="bi bi-github me-1"></i>GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section
+  id="habilidades"
+  class="min-vh-100 d-flex align-items-center bg-light text-dark py-5"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mb-5">
+        <h2 class="mb-4 position-relative">
+          <i class="bi bi-lightbulb-fill me-2"></i>Habilidades e Certificações
+        </h2>
+      </div>
+
+      <!-- Hard Skills -->
+      <div class="col-md-6 mb-4">
+        <h4><i class="bi bi-cpu-fill me-2"></i>Hard Skills</h4>
+        <p>
+          Domínio de ferramentas e linguagens para desenvolvimento web e
+          backend:
+        </p>
+
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <strong>HTML & CSS</strong>
+            <div class="progress">
+              <div class="progress-bar bg-success" style="width: 90%">90%</div>
+            </div>
+          </li>
+          <li class="mb-3">
+            <strong>JavaScript</strong>
+            <div class="progress">
+              <div class="progress-bar bg-warning text-dark" style="width: 80%">
+                80%
+              </div>
+            </div>
+          </li>
+          <li class="mb-3">
+            <strong>Java</strong>
+            <div class="progress">
+              <div class="progress-bar bg-info" style="width: 75%">75%</div>
+            </div>
+          </li>
+          <li class="mb-3">
+            <strong>Node.js</strong>
+            <div class="progress">
+              <div class="progress-bar bg-dark" style="width: 70%">70%</div>
+            </div>
+          </li>
+          <li class="mb-3">
+            <strong>Python</strong>
+            <div class="progress">
+              <div class="progress-bar bg-danger" style="width: 90%">90%</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Soft Skills + Certificações -->
+      <div class="col-md-6">
+        <h4><i class="bi bi-people-fill me-2"></i>Soft Skills</h4>
+        <p>
+          Competências interpessoais desenvolvidas em estudos e projetos
+          colaborativos:
+        </p>
+        <ul>
+          <li>Boa comunicação</li>
+          <li>Organização</li>
+          <li>Curiosidade e vontade de aprender</li>
+          <li>Trabalho em equipe</li>
+        </ul>
+
+        <h4 class="mt-4"><i class="bi bi-award-fill me-2"></i>Certificações</h4>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-light border-0">
+            Desenvolvimento Web – Udemy (2024)
+          </li>
+          <li class="list-group-item bg-light border-0">
+            Curso de Java Básico – Alura
+          </li>
+          <li class="list-group-item bg-light border-0">
+            Introdução ao Git e GitHub – Alura
+          </li>
+          <li class="list-group-item bg-light border-0">
+            Análise de Dados com Power BI – Fundação Bradesco
+          </li>
+          <li class="list-group-item bg-light border-0">
+            Segurança em TI – Fundação Bradesco
+          </li>
+          <li class="list-group-item bg-light border-0">
+            Azure Fundamentals: AZ-900 - Microsoft
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-black text-light" id="contato">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-md-8">
+        <h2 class="mb-3"><i class="bi bi-envelope-fill me-2"></i>Contato</h2>
+        <p class="mb-4">Entre em contato comigo pelos canais abaixo:</p>
+
+        <div class="mb-3">
+          <p>
+            <i class="bi bi-envelope me-2"></i><strong>Email:</strong>
+            <a
+              href="mailto:matheusdisabatino@outlook.com"
+              class="text-light text-decoration-underline"
+              >matheusdisabatino@outlook.com</a
+            >
+          </p>
+          <p>
+            <i class="bi bi-linkedin me-2"></i><strong>LinkedIn:</strong>
+            <a href="#" class="text-light text-decoration-underline"
+              >linkedin.com/in/matheusp</a
+            >
+          </p>
+          <p>
+            <i class="bi bi-github me-2"></i><strong>GitHub:</strong>
+            <a
+              href="https://github.com/matheuspires7"
+              class="text-light text-decoration-underline"
+              >github.com/matheuspires7</a
+            >
+          </p>
+        </div>
+
+        <a
+          href="mailto:matheusdisabatino@outlook.com"
+          class="btn btn-outline-light"
+        >
+          <i class="bi bi-send-fill me-2"></i>Enviar Email
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>
