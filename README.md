@@ -12,7 +12,7 @@ npm install
 
 3. **Execute o projeto:**
 ```bash
-npm run dev
+node app.js
 ```
 5. **Acesse o site no navegador:**
 
