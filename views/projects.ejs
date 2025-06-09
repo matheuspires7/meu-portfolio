@@ -1,0 +1,203 @@
+<%- include('partials/header') %>
+
+<section
+  id="projects"
+  class="py-5 bg-black text-white min-vh-100 d-flex align-items-center"
+>
+  <div class="container">
+    <h2 class="mb-5">
+      <i class="bi bi-folder2-open me-2"></i>
+      <span class="border-bottom border-info border-3 pb-1">Projetos</span>
+    </h2>
+
+    <div class="row justify-content-center g-4">
+      <!-- Projetos Estáticos -->
+
+      <!-- DocEye -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card bg-dark text-light border-0 rounded-4 p-3 h-100">
+          <img
+            src="img/doceye.png"
+            class="card-img-top rounded-3 mb-3"
+            alt="DocEye"
+          />
+          <div class="card-body">
+            <h5 class="card-title mb-3">DocEye</h5>
+            <p class="card-text">
+              Software para automatização de extração de informações.
+            </p>
+            <div class="mb-2">
+              <span class="badge bg-primary me-1">Java</span>
+              <span class="badge bg-warning text-dark me-1">Tesseract OCR</span>
+              <span class="badge bg-secondary">Ollama</span>
+            </div>
+            <p>
+              <strong>Desafios:</strong> Integração de VLM com Java Desktop,
+              tratamento de diferentes layouts, extração precisa e armazenamento
+              eficiente.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a
+              href="https://github.com/matheuspires7/DocEye"
+              target="_blank"
+              class="btn btn-outline-light btn-sm rounded-pill px-3 transition"
+            >
+              <i class="bi bi-github me-1"></i>GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scrum Teach -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card bg-dark text-light border-0 rounded-4 p-3 h-100">
+          <img
+            src="img/scrumteach.png"
+            class="card-img-top rounded-3 mb-3"
+            alt="Scrum Teach"
+          />
+          <div class="card-body">
+            <h5 class="card-title mb-3">Scrum Teach</h5>
+            <p class="card-text">
+              Plataforma educacional interativa voltada para o ensino de
+              metodologias ágeis com foco em Scrum.
+            </p>
+            <div class="mb-2">
+              <span class="badge bg-light text-dark me-1">HTML</span>
+              <span class="badge bg-info text-dark me-1">CSS</span>
+              <span
+                class="badge bg-purple text-white"
+                style="background-color: #7952b3"
+                >Bootstrap</span
+              >
+            </div>
+            <p>
+              <strong>Desafios:</strong> Transformar conceitos teóricos em
+              conteúdo interativo, garantir acessibilidade e criar avaliações
+              eficazes.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a
+              href="https://github.com/matheuspires7/scrum-teach"
+              target="_blank"
+              class="btn btn-outline-light btn-sm rounded-pill px-3 transition"
+            >
+              <i class="bi bi-github me-1"></i>GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PontoLog -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card bg-dark text-light border-0 rounded-4 p-3 h-100">
+          <img
+            src="img/pontolog.png"
+            class="card-img-top rounded-3 mb-3"
+            alt="PontoLog"
+          />
+          <div class="card-body">
+            <h5 class="card-title mb-3">PontoLog</h5>
+            <p class="card-text">
+              Plataforma web para análise e visualização de dados sobre o
+              desempenho logístico e comercial dos estados brasileiros.
+            </p>
+            <div class="mb-2">
+              <span class="badge bg-warning text-dark me-1">JavaScript</span>
+              <span class="badge bg-success">React</span>
+            </div>
+            <p>
+              <strong>Desafios:</strong> Coleta e tratamento de dados abertos,
+              criação de gráficos interativos e filtros por período, estado e
+              produto.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a
+              href="https://github.com/CodeDontBlow/PontoLog"
+              target="_blank"
+              class="btn btn-outline-light btn-sm rounded-pill px-3 transition"
+            >
+              <i class="bi bi-github me-1"></i>GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calculadora de IMC -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card bg-dark text-light border-0 rounded-4 p-3 h-100">
+          <div class="card-body">
+            <h5 class="card-title mb-3">Calculadora de IMC</h5>
+            <p class="card-text">
+              Projeto de Sistema de Gestão de Alunos e Cálculo de IMC.
+            </p>
+            <div class="mb-2">
+              <span class="badge bg-primary me-1">Java</span>
+              <span class="badge bg-success">MySQL</span>
+            </div>
+            <p>
+              <strong>Desafios:</strong> Implementar cálculo de IMC, CRUD com
+              MySQL, organização de dados por aluno e criação de interface clara
+              para o usuário.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-outline-light btn-sm rounded-pill px-3 transition"
+            >
+              <i class="bi bi-github me-1"></i>GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projetos do Banco de Dados -->
+      <% if (projetos && projetos.length > 0) { %> <% projetos.forEach(p => { %>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div
+          class="card bg-dark text-light border-0 rounded-4 p-3 h-100 d-flex flex-column justify-content-between"
+        >
+          <div class="card-body">
+            <h5 class="card-title mb-3"><%= p.nome %></h5>
+            <p class="card-text"><%= p.descricao %></p>
+          </div>
+          <div
+            class="card-footer bg-transparent border-0 d-flex justify-content-between"
+          >
+            <a
+              href="/formulario/<%= p.id %>"
+              class="btn btn-sm btn-outline-warning rounded-pill px-3"
+            >
+              <i class="bi bi-pencil-square me-1"></i> Editar
+            </a>
+            <form
+              action="/projects/<%= p.id %>?_method=DELETE"
+              method="POST"
+              onsubmit="return confirm('Tem certeza que deseja excluir este projeto?')"
+            >
+              <button
+                type="submit"
+                class="btn btn-sm btn-outline-danger rounded-pill px-3"
+              >
+                <i class="bi bi-trash me-1"></i> Excluir
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <% }) %> <% } else { %>
+      <p class="text-white">Nenhum projeto encontrado no banco de dados.</p>
+      <% } %>
+    </div>
+    <div class="d-flex justify-content-center my-4">
+      <a href="/formulario" class="btn btn-outline-light">Adicionar Projeto</a>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

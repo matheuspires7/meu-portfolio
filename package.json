@@ -1,18 +1,30 @@
 {
   "name": "meu-portfolio",
   "version": "1.0.0",
+  "description": "1. **Clone o repositório:**",
+  "homepage": "https://github.com/matheuspires7/meu-portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/matheuspires7/meu-portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheuspires7/meu-portfolio.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
+    "body-parser": "^2.2.0",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
+    "method-override": "^3.0.0",
+    "mysql2": "^3.14.1",
     "nodemon": "^3.1.9"
   }
 }

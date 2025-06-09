@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+<section class="py-5 min-vh-100 bg-black text-white">
+  <div class="container">
+    <h2 class="mb-4"><%= projeto ? 'Editar Projeto' : 'Adicionar Projeto' %></h2>
+
+    <form action="<%= projeto ? '/projects/' + projeto.id + '?_method=PUT' : '/projects' %>" method="POST">
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome do Projeto</label>
+        <input type="text" class="form-control" id="nome" name="nome" required value="<%= projeto ? projeto.nome : '' %>">
+      </div>
+      <div class="mb-3">
+        <label for="descricao" class="form-label">Descrição</label>
+        <textarea class="form-control" id="descricao" name="descricao" rows="4" required><%= projeto ? projeto.descricao : '' %></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary"><%= projeto ? 'Atualizar Projeto' : 'Salvar Projeto' %></button>
+    </form>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

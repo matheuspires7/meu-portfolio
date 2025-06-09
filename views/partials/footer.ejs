@@ -1,25 +1,22 @@
 </main>
-
 <footer>
   <p>&copy; 2025 Matheus Pires. Todos os direitos reservados.</p>
 </footer>
 
-<script>
-  const text = "Desenvolvedor, Estudante & Apaixonado por Tecnologia.";
-  const typedTextSpan = document.querySelector(".typed-text");
-  let charIndex = 0;
+  <script>
+    const text = "Desenvolvedor, Estudante & Apaixonado por Tecnologia.";
+    const typedTextSpan = document.querySelector(".typed-text");
+    let charIndex = 0;
 
-  function type() {
-    if (charIndex < text.length) {
-      typedTextSpan.textContent += text.charAt(charIndex);
-      charIndex++;
-      setTimeout(type, 70);
+    function type() {
+      if (charIndex < text.length) {
+        typedTextSpan.textContent += text.charAt(charIndex);
+        charIndex++;
+        setTimeout(type, 70);
+      }
     }
-  }
 
-  document.addEventListener("DOMContentLoaded", type);
-</script>
-
-</body>
+    document.addEventListener("DOMContentLoaded", type);
+    </script>
+  </body>
 </html>
-
