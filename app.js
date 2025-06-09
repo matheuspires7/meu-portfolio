@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 const path = require("path");
 const mysql = require('mysql2');
-const methodOverride = require('method-override'); // 👈 IMPORTANTE
+const methodOverride = require('method-override'); 
 
 // Configurar conexão com MySQL
 const db = mysql.createConnection({
@@ -55,7 +55,7 @@ app.get('/projects', (req, res) => {
 
 // Página de formulário para novo projeto
 app.get('/formulario', (req, res) => {
-  res.render('formulario', { projeto: null }); // 👈 Passa null para novo projeto
+  res.render('formulario', { projeto: null }); 
 });
 
 // Página de formulário para editar um projeto existente
@@ -70,7 +70,7 @@ app.get('/formulario/:id', (req, res) => {
     if (results.length === 0) {
       return res.status(404).send('Projeto não encontrado');
     }
-    res.render('formulario', { projeto: results[0] }); // 👈 Passa o projeto existente
+    res.render('formulario', { projeto: results[0] }); 
   });
 });
 
@@ -128,11 +128,11 @@ app.get('/projects/:id', (req, res) => {
       return res.status(404).send('Projeto não encontrado');
     }
 
-    res.json(results[0]); // Retorna o projeto em JSON
+    res.json(results[0]); 
   });
 });
 
-// Listar todos os projetos em formato JSON
+// Listar todos os projetos
 app.get('/list/projects', (req, res) => {
   const sql = 'SELECT * FROM projetos';
   db.query(sql, (err, results) => {
@@ -140,11 +140,9 @@ app.get('/list/projects', (req, res) => {
       console.error('Erro ao buscar projetos:', err);
       return res.status(500).send('Erro no servidor');
     }
-    res.json(results); // Retorna todos os projetos em formato JSON
+    res.json(results); 
   });
 });
-
-
 
 // Iniciar servidor
 app.listen(port, () => {
